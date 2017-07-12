@@ -1,0 +1,112 @@
+queue.xml*
+
+
+# Site-wide configuration files.
+
+*.xml
+# Except root,email,slack configuration.
+!config.xml
+!credentials.xml
+!hudson.plugins.emailext.ExtendedEmailPublisher.xml
+!hudson.tasks.Mailer.xml
+!jenkins.plugins.slack.SlackNotifier.xml
+
+
+# Tools that Hudson manages
+tools/
+
+# Git untracked files to ignore.
+
+
+# Cache.
+.cache/
+
+
+# Fingerprint records.
+fingerprints/
+
+
+# Working directories.
+workspace/
+war
+
+# Secret files.
+
+secrets/
+secret.*
+*.enc
+*.key
+id_rsa
+
+
+# user setting directories.
+users/
+!users/*/config.xml
+
+
+# Plugins.
+plugins/
+
+
+# state files.
+*.state
+
+builds/
+lastStable
+lastSuccessful
+nextBuildNumber
+identity*
+
+# Updates.
+
+updates/
+
+# Hidden files.
+
+.*
+# Except git config files.
+!.git*
+!.ssh/
+
+# User content.
+userContent/
+
+# Log files.
+logs/
+*.log
+log
+
+# Miscellaneous litter
+*.tmp
+*.old
+*.bak
+*.swp
+*.jar
+*.json
+*.lastExecVersion
+
+shelvedProjects/
+nodes/
+config-history/
+caches/
+
+# Only get the config.xml from any Jobs directory
+jobs/*/builds
+jobs/*/modules
+jobs/*/htmlreports
+jobs/*/last*
+jobs/*/next*
+jobs/*/*.csv
+jobs/*/*.txt
+jobs/*/*.log
+jobs/*/workspace
+# Process jobs that exist in folders
+jobs/**/jobs/*/builds
+jobs/**/jobs/*/modules
+jobs/**/jobs/*/htmlreports
+jobs/**/jobs/*/last*
+jobs/**/jobs/*/next*
+jobs/**/jobs/*/*.csv
+jobs/**/jobs/*/*.txt
+jobs/**/jobs/*/*.log
+jobs/**/jobs/*/workspace
