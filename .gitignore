@@ -39,7 +39,7 @@ id_rsa
 
 
 # user setting directories.
-users/
+users/**
 !users/**/config.xml
 
 
