@@ -9,6 +9,9 @@ queue.xml*
 !hudson.plugins.emailext.ExtendedEmailPublisher.xml
 !hudson.tasks.Mailer.xml
 !jenkins.plugins.slack.SlackNotifier.xml
+# user setting directories.
+#users/**/*.xml
+!users/**/config.xml
 
 
 # Tools that Hudson manages
@@ -38,14 +41,8 @@ secret.*
 id_rsa
 
 
-# user setting directories.
-users/**
-!users/**/config.xml
-
-
 # Plugins.
 plugins/
-
 
 # state files.
 *.state
