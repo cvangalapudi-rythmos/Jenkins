@@ -9,6 +9,7 @@ queue.xml*
 !hudson.plugins.emailext.ExtendedEmailPublisher.xml
 !hudson.tasks.Mailer.xml
 !jenkins.plugins.slack.SlackNotifier.xml
+!jenkins.model.JenkinsLocationConfiguration.xml
 # user setting directories.
 #users/**/*.xml
 !users/**/config.xml

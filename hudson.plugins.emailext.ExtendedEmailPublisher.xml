@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.58">
+  <defaultSuffix>@rythmos.com</defaultSuffix>
+  <smtpAuthUsername>cvangalapudi@rythmos.com</smtpAuthUsername>
+  <smtpAuthPassword>{AQAAABAAAAAgJ6giOuF5OR17pyB7kK/SLs3yLgjqvoDbkNiw74wXNS1kC4Gj5AcXIWjlszrhygd3}</smtpAuthPassword>
+  <smtpHost>smtp.office365.com</smtpHost>
   <useSsl>false</useSsl>
+  <smtpPort>587</smtpPort>
   <charset>UTF-8</charset>
   <defaultContentType>text/plain</defaultContentType>
   <defaultSubject>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!</defaultSubject>
@@ -15,10 +20,11 @@ Check console output at $BUILD_URL to view the results.</defaultBody>
   </defaultTriggerIds>
   <maxAttachmentSize>-1</maxAttachmentSize>
   <recipientList></recipientList>
+  <defaultReplyTo></defaultReplyTo>
   <excludedCommitters></excludedCommitters>
   <overrideGlobalSettings>true</overrideGlobalSettings>
   <precedenceBulk>false</precedenceBulk>
-  <debugMode>false</debugMode>
+  <debugMode>true</debugMode>
   <requireAdminForTemplateTesting>false</requireAdminForTemplateTesting>
   <enableWatching>false</enableWatching>
 </hudson.plugins.emailext.ExtendedEmailPublisherDescriptor>
